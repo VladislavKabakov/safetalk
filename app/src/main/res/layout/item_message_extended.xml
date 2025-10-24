@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="6dp">
+
+    <LinearLayout
+            android:id="@+id/llMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="9dp"
+            android:maxWidth="210dp">
+
+        <TextView
+                android:id="@+id/tvMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Message text"
+                android:textSize="12sp"/>
+
+        <LinearLayout
+                android:id="@+id/llFileAttachment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp"
+                android:visibility="gone"
+                android:background="?attr/selectableItemBackground"
+                android:padding="3dp">
+
+            <ImageView
+                    android:id="@+id/ivFileIcon"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@android:drawable/ic_menu_save"
+                    android:layout_marginEnd="6dp"/>
+
+            <TextView
+                    android:id="@+id/tvFileName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="filename.pdf"
+                    android:textSize="10.5sp"
+                    android:maxWidth="150dp"
+                    android:ellipsize="middle"
+                    android:maxLines="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="3dp">
+
+            <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12:00"
+                    android:textSize="9sp"
+                    android:textColor="@android:color/darker_gray"/>
+
+            <TextView
+                    android:id="@+id/tvEdited"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="edited"
+                    android:textSize="9sp"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_marginStart="6dp"
+                    android:visibility="gone"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
